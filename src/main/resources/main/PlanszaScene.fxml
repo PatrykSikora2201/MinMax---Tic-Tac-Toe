@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PlanszaSceneController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="110.0" layoutY="99.0" prefHeight="232.0" prefWidth="379.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bt00" mnemonicParsing="false" onAction="#clikField0" prefHeight="96.0" prefWidth="204.0" style="-fx-background-color: #FFFFFF;" />
+            <Button fx:id="bt10" mnemonicParsing="false" onAction="#clikField3" prefHeight="122.0" prefWidth="229.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1" />
+            <Button fx:id="bt20" mnemonicParsing="false" onAction="#clikField6" prefHeight="144.0" prefWidth="335.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="2" />
+            <Button fx:id="bt01" mnemonicParsing="false" onAction="#clikField1" prefHeight="107.0" prefWidth="213.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" />
+            <Button fx:id="bt11" mnemonicParsing="false" onAction="#clikField4" prefHeight="104.0" prefWidth="271.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="bt21" mnemonicParsing="false" onAction="#clikField7" prefHeight="113.0" prefWidth="411.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="bt02" mnemonicParsing="false" onAction="#clikField2" prefHeight="116.0" prefWidth="181.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" />
+            <Button fx:id="bt12" mnemonicParsing="false" onAction="#clikField5" prefHeight="105.0" prefWidth="228.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="bt22" mnemonicParsing="false" onAction="#clikField8" prefHeight="146.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="203.0" layoutY="14.0" prefHeight="55.0" prefWidth="182.0" text="Kółko i Krzyżyk " textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="41.0" text="Gracz" />
+      <Label layoutX="21.0" layoutY="46.0" text="Ruch" />
+      <Label fx:id="gracz" layoutX="63.0" layoutY="22.0" text="X" />
+      <Label fx:id="ruch" layoutX="60.0" layoutY="46.0" text="0" />
+      <Label fx:id="wynik" layoutX="20.0" layoutY="69.0" />
+      <Button layoutX="517.0" layoutY="17.0" mnemonicParsing="false" onAction="#newGame" text="Nowa GRA" />
+      <CheckBox fx:id="typPlayer" layoutX="426.0" layoutY="55.0" mnemonicParsing="false" text="graj z komputerem L1" />
+      <CheckBox fx:id="typPlayer2" layoutX="426.0" layoutY="78.0" mnemonicParsing="false" text="graj z komputerem L2" />
+   </children>
+</AnchorPane>
